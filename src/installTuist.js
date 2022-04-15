@@ -16,6 +16,7 @@ module.exports = async () => {
   );
   const tuistEnvURL = await latestReleaseTuistEnvDownloadURL();
   console.log('Downloading Tuist...');
+  console.log(`tuistenv: ${tuistEnvURL}`);
   await downloadFile(tuistEnvURL, tuistEnvTmpZipPath);
   execSync(
     `unzip -o ${tuistEnvTmpZipPath} -d ${tuistEnvUnzippedPath}`,

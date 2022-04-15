@@ -19,7 +19,7 @@ module.exports = async () => {
       execCommand = `${execCommand} ${args}`;
     }
 
-    console.log(execCommand);
+    console.log(`command: ${execCommand}`);
     execSync(execCommand);
   } catch (error) {
     console.log(error);
