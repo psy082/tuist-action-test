@@ -19,8 +19,10 @@ module.exports = async () => {
       execCommand = `${execCommand} ${args}`;
     }
 
+    console.log(execCommand);
     execSync(execCommand);
   } catch (error) {
+    console.log(error);
     core.setFailed(error.message);
   }
 };
