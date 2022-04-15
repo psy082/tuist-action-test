@@ -26,6 +26,6 @@ module.exports = async () => {
     `copy from ${tuistExecEnvUnzippedPath} to ${tuistEnvPath}`,
   );
   execSync(`chmod +x ${tuistEnvPath}`);
-  console.log(execSync('ls -l'));
+  console.log(execSync('ls ./tuistexec -l'));
   console.log(`Tuist has been installed at ${tuistEnvPath}`);
 };
