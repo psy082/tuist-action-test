@@ -14,7 +14,7 @@ module.exports = async () => {
     ensureDarwin();
     await installTuist();
 
-    let execCommand = `${tuistEnvPath} ${command}`;
+    let execCommand = `${tuistEnvPath}/tuistexec ${command}`;
     if (args) {
       execCommand = `${execCommand} ${args}`;
     }
